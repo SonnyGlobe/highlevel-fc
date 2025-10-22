@@ -1,13 +1,9 @@
-
-//const allowed1 = url.includes("16cb204cf3a9d4d223a0a3fd8b0eec5d"); // allowed URL
-//const allowed2= url.includes("sonnyglobe.github.io"); // allowed URL
-//const allowed3 = url.includes("http://127.0.0.1:5501"); // allowed URL
 document.addEventListener("DOMContentLoaded", () => {
     const url = window.location.href;
-    const allowed1 = url.includes("SonnyGlobe");
+    const allowed1 = url.includes("http://127.0.0.1:5501");
     const allowed2 = url.includes("b2b-dmcp-plus");
-
-    if (allowed1 || allowed2) {
+    const allowed3 = url.includes("sonnyglobe");
+    if (allowed1 || allowed2 || allowed3) {
         // ✅ Authorized: show the body
         document.body.style.display = "block";
     } else {
@@ -38,5 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(msg);
         document.body.style.display = "flex";
     }
-
 });
