@@ -4,7 +4,7 @@
 //const allowed3 = url.includes("http://127.0.0.1:5501"); // allowed URL
 document.addEventListener("DOMContentLoaded", () => {
     const url = window.location.href;
-    const allowed1 = url.includes("http://127.0.0.1:5501");
+    const allowed1 = url.includes("SonnyGlobe");
     const allowed2 = url.includes("b2b-dmcp-plus");
 
     if (allowed1 || allowed2) {
@@ -38,4 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(msg);
         document.body.style.display = "flex";
     }
+
 });
