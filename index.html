@@ -560,6 +560,7 @@
         //BB_Facility Week 44  - https://docs.google.com/spreadsheets/d/e/2PACX-1vSalBJBOmVHSaeJNzEVKMG2Vzfnao8Wag8ABbvkmxNWMUskcMyo8d-GFTwx5dQoEsBt3fWZWDujT-1S/pub?output=csv
         //GAL_Facility Week 44 - https://docs.google.com/spreadsheets/d/e/2PACX-1vR64NxG_kxHbwnHcVpEY9WVAk8qoN7K2QZU5h2aQjailgMrwyipwF2M_zUqcoZ_295o7nP37KCj_sij/pub?output=csv
         //BTS_Facility Week 44 - https://docs.google.com/spreadsheets/d/e/2PACX-1vS47Y0ef8d6lReMrAtvYMLKtkmuxVGtVtaFLqq5B4A4OKHPgbWNMFOjkDkx1yP-R1jTPl7deNVUkT9W/pub?output=csv
+     
         var encUrl_bb =  "aXV1cXQ7MDBlcGR0L2hwcGhtZi9kcG4wdHFzZmJldGlmZnV0MGUwZjAzUUJEWS4yd1RibUNLQ1BuV0lUYmZLT3tGV0xOSDNXe2dvYnA5WGJoOUJDY3dsbnlPWE5WdGxkTnpwOWUuSEdVeHk2ZVJwRnRDdTRnWFtYRXZrVS4yVDBxdmNAcHZ1cXZ1PmR0dw==";
         var encUrl_gal = "aXV1cXQ7MDBlcGR0L2hwcGhtZi9kcG4wdHFzZmJldGlmZnV0MGUwZjAzUUJEWS4yd1M3NU95SGBseUljeG9JZFdxRlo6WFdCbDlycE84TDNSW1Y2aTNiUmtiam1oTnN4empxeEczTmB7VnJkcFtgMzo2cDhvUTQ4TERrYHRqazBxdmNAcHZ1cXZ1PmR0dw=="; // <-- replace with your encoded galactus csv if any
         var encUrl_bts = "aXV1cXQ7MDBlcGR0L2hwcGhtZi9kcG4wdHFzZmJldGlmZnV0MGUwZjAzUUJEWS4yd1Q1OFoxZmc5ZTdtU2ZOc0J1d1pOTUx1bG52eVdIdVd1YkdNcnI2QzVCNVBMSVFoY1hPTkdQa2xFbHkyelEuUzJrVVFtOGVmT1dWbFU6WDBxdmNAcHZ1cXZ1PmR0dw=="; // <-- replace with your encoded bts csv if any
@@ -1247,7 +1248,8 @@
             const url = window.location.href;
             const ref = document.referrer;
             const allowed1 = url.includes("http://127.0.0.1:5501");
-            const allowed2 = ref.includes("atari-embeds.googleusercontent.com");
+            const allowed2 = ref.includes("sonnyglobe.github.io/highlevel-fc");
+            const allowed3 = ref.includes("atari-embeds.googleusercontent.com");
             console.log("Actual URL seen by JS:", window.location.href);
             console.log("Actual URL seen by Ref:", document.referrer);
             if (allowed1 || allowed2) {
