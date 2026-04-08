@@ -1252,7 +1252,7 @@
             const allowed3 = ref.includes("atari-embeds.googleusercontent.com");
             console.log("Actual URL seen by JS:", window.location.href);
             console.log("Actual URL seen by Ref:", document.referrer);
-            if (allowed1 || allowed2) {
+            if (allowed1 || allowed2 || allowed3) {
                 // ✅ Authorized: show the body
                 document.body.style.display = "block";
             } else {
