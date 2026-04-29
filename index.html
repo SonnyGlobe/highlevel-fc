@@ -1245,14 +1245,17 @@
         // ------------------------------------------------------------------------------------------------ //
         document.addEventListener("DOMContentLoaded", () => {
 
-            const url = window.location.href;
+             const url = window.location.href;
             const ref = document.referrer;
             const allowed1 = url.includes("http://127.0.0.1:5501");
-            const allowed2 = ref.includes("sonnyglobe");
-            const allowed3 = ref.includes("atari-embeds.googleusercontent.com");
+            const allowed2 = url.includes("sonnyglobe.github.io");
+            const allowed3 = url.includes("atari-embeds.googleusercontent.com");
+            const allowed4 = ref.includes("http://127.0.0.1:5501");
+            const allowed5 = ref.includes("sonnyglobe.github.io");
+            const allowed6 = ref.includes("atari-embeds.googleusercontent.com");
             console.log("Actual URL seen by JS:", window.location.href);
             console.log("Actual URL seen by Ref:", document.referrer);
-            if (allowed1 || allowed2 || allowed3) {
+            if (allowed1 || allowed2 || allowed3 || allowed4 || allowed5 || allowed6) {
                 // ✅ Authorized: show the body
                 document.body.style.display = "block";
             } else {
